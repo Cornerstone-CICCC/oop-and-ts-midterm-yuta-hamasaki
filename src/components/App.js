@@ -19,19 +19,16 @@ export class App extends Component {
       <div class="footer_wrapper"></div>
     `
 
-    // Create instance and render
     const header = new Header().render()
     const cart = new CartList({ cartContext: this.props.cartContext }).render()
     const footer = new Footer().render()
 
     const productList = new ProductList({ cartContext: this.props.cartContext })
 
-    // Insert html into DOM
     appContainer.querySelector('.header_wrapper').appendChild(header)
     appContainer.querySelector('aside').appendChild(cart)
     appContainer.querySelector('.footer_wrapper').appendChild(footer)
 
-    // Trigger mount method of ProductList
     productList.mount(appContainer.querySelector('main'))
 
     return appContainer;

@@ -43,14 +43,12 @@ export class CartList extends Component {
   //total PRICE
   updateTotal() {
     const totalAmount = this.props.cartContext.totalAmount;
-
     this.totalOutput.innerHTML = `<h2>Total: $${totalAmount.toFixed(2)}</h2>`;
   }
 
   //amount of ITEMS
   updateQuantity(){
     const totalQuantity = this.props.cartContext.totalQuantity;
-
     this.totalQuantityOutput.innerHTML = `<p>${totalQuantity} items</p>`
   }
 

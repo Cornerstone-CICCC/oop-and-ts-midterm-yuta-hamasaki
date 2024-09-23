@@ -16,13 +16,12 @@ export class ProductItem extends Component {
     <div class="product_card">
       <img src=${this.props.product.image} alt="product_img"/>
       <h3>${this.props.product.title}</h3>
-      <p>${this.props.product.price}</p>
+      <p>$${this.props.product.price}</p>
       <p>${this.props.product.description}</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
     `
-
-    // Add click event to add to cart button
+  
     product.querySelector('.add-to-cart-btn').addEventListener('click', this.handleAddToCart)
 
     return product;

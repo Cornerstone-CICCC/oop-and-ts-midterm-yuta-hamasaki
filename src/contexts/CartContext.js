@@ -1,7 +1,7 @@
 export class CartContext {
   constructor() {
-    this.cart = [] // this is where products will go
-    this.listeners = [] // a collection of func that will listen to changes in cart
+    this.cart = []
+    this.listeners = [] 
   }
 
 
