@@ -17,12 +17,12 @@ Create a fake store website using OOP. You will create the necessary classes and
 
 ## ⚙️ Features
 
-- Show a list of products from an API, with image, title, price and description
-- Be able to add products to the cart
-- Be able to change the quantity of each item in the cart
-- Be able to remove items from the cart
-- Show the total number of items in the cart
-- Show the total price of the items in the cart
+- Show a list of products from an API, with image, title, price and description - done
+- Be able to add products to the cart - done
+- Be able to change the quantity of each item in the cart - done
+- Be able to remove items from the cart - done
+- Show the total number of items in the cart -done
+- Show the total price of the items in the cart - done
 
 ## 🔣 Methods
 

@@ -1,1 +1,50 @@
 /* YOUR CSS HERE */
+body{
+  margin:0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  background-color: antiquewhite;
+  padding:3px 50px;
+}
+
+.content_wrapper{
+  padding:3px 60px;
+}
+
+menu{
+  display: flex;
+  flex-direction: row;
+}
+
+menu li{
+  list-style: none;
+  padding: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.product_card img{
+  width:150px;
+  height:auto;
+}
+
+
+aside {
+  right:0;
+  flex: 200px;
+  background-color:white;
+  position: fixed;
+  border:1px solid black;
+  padding: 10px;
+}
+
+footer{
+  background-color: rgb(36, 208, 125);
+}

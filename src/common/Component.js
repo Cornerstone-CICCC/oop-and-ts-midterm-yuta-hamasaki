@@ -5,7 +5,7 @@ export class Component {
   }
 
   render() {
-    throw new Error('Component should have a render() method!')
+    throw new Error('Component should have a mount() method!')
   }
 
   mount(container) {
