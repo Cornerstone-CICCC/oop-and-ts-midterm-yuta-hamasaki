@@ -61,6 +61,7 @@ export class CartList extends Component {
     this.props.cartContext.removeProduct(id)
   }
 
+
   render() {
     const cartElement = document.createElement('div')
     cartElement.innerHTML = `
@@ -69,7 +70,9 @@ export class CartList extends Component {
       </ul>
       <p>${0} items</p>
       <h2>
-      Total:$${0}</h2
+      Total:$${0}
+      </h2>
+      <button class="checkoutBtn">Check out</button>
     `
   
     this.productsListElement = cartElement.querySelector('ul')

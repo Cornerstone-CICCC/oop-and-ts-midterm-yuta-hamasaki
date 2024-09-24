@@ -64,6 +64,7 @@ menu li{
 
 .product_card{
   width: 300px;
+  height:auto;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -111,8 +112,6 @@ menu li{
   color: #555;
 }
 
-
-
 .price-order {
   display: flex;
   justify-content: space-between;
@@ -145,7 +144,17 @@ aside {
   flex:1;
   z-index:10;
 }
+aside .checkoutBtn{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
 footer{
-  background-color: rgb(36, 208, 125);
+  background-color: white;
+  text-align:center;
 }
