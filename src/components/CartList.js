@@ -13,7 +13,7 @@ export class CartList extends Component {
 
   updateCart(cart) { 
     this.state.cart = cart
-    console.log(cart)
+    // console.log(cart)
     this.productsListElement.innerHTML = ''
 
 
@@ -29,8 +29,10 @@ export class CartList extends Component {
       const deleteBtn = listItem.querySelector('.deleteBtn');
       deleteBtn.addEventListener('click', () => this.handleRemove(item.id));
 
+
       const itemAmount = listItem.querySelector('.itemAmount');
       itemAmount.addEventListener('change', (event) => {
+
         const newQuantity = parseInt(event.target.value);
         this.props.cartContext.updateQuantity(item.id, newQuantity);
       });
@@ -49,6 +51,9 @@ export class CartList extends Component {
   //amount of ITEMS
   updateQuantity(){
     const totalQuantity = this.props.cartContext.totalQuantity;
+    if(totalQuantity === 20 || totalQuantity === 25 ){
+      alert("Are you sure? You are buying too much! Please check if the amount is correct!!!!!!!")
+    }
     this.totalQuantityOutput.innerHTML = `<p>${totalQuantity} items</p>`
   }
 
