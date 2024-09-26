@@ -21,7 +21,7 @@ export class ProductItem extends Component {
         <h2>${this.props.product.title}</h2>
         <p>${this.props.product.description}</p>
         <div class="price-order">
-            <span class="price">$${this.props.product.price}</span>
+            <span class="price">$${this.props.product.price.toLocaleString()}</span>
             <button class="add-to-cart-btn">Add Cart</button>
         </div>
       </div>

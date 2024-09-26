@@ -7,7 +7,7 @@ export class CartList extends Component {
     this.state = { cart: [] }
     this.updateCart = this.updateCart.bind(this)
     this.handleRemove = this.handleRemove.bind(this);
-    this.props.cartContext.subscribe(this.updateCart)
+    this.props.cartContext.subscribe(this.updateCart);
     this.productsListElement = null
   }
 
@@ -45,7 +45,7 @@ export class CartList extends Component {
   //total PRICE
   updateTotal() {
     const totalAmount = this.props.cartContext.totalAmount;
-    this.totalOutput.innerHTML = `<h2>Total: $${totalAmount.toFixed(2)}</h2>`;
+    this.totalOutput.innerHTML = `<h2>Total: $${totalAmount.toLocaleString()}</h2>`;
   }
 
   //amount of ITEMS
@@ -59,6 +59,9 @@ export class CartList extends Component {
 
   handleRemove(id){
     this.props.cartContext.removeProduct(id)
+  }
+  handleCheckout(){
+    alert("Thank you!")
   }
 
 
@@ -78,6 +81,7 @@ export class CartList extends Component {
     this.productsListElement = cartElement.querySelector('ul')
     this.totalOutput = cartElement.querySelector('h2');
     this.totalQuantityOutput = cartElement.querySelector("p")
+    cartElement.querySelector(".checkoutBtn").addEventListener('click', this.handleCheckout)
 
     return cartElement;
   }

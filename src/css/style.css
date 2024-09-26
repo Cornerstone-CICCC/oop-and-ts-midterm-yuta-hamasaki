@@ -1,4 +1,7 @@
 /* YOUR CSS HERE */
+*{
+  font-family: Tahoma, Verdana, sans-serif;
+}
 body{
   margin:0;
 }
@@ -22,6 +25,9 @@ main{
   flex:1
 }
 
+main h1{
+  text-align: center;
+}
 menu{
   display: flex;
   flex-direction: row;
@@ -135,17 +141,23 @@ menu li{
   padding: 10px 15px;
   cursor: pointer;
   font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
 }
 
-
+.add-to-cart-btn:hover{
+  transform: scale(1.2)
+}
 
 
 aside {
   background-color:white;
-  border:1px solid black;
   padding: 10px;
   flex:1;
   z-index:10;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height:auto;
 }
 aside .checkoutBtn{
   background-color: #000;
@@ -155,9 +167,16 @@ aside .checkoutBtn{
   padding: 10px 15px;
   cursor: pointer;
   font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
+}
+
+aside .checkoutBtn:hover{
+  transform: scale(1.2)
 }
 
 footer{
   background-color: white;
   text-align:center;
 }
+
