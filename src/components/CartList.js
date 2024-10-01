@@ -68,7 +68,7 @@ export class CartList extends Component {
   render() {
     const cartElement = document.createElement('div')
     cartElement.innerHTML = `
-      <h3>🛒</h3>
+      <h3>🛒 Cart 🛒</h3>
       <ul>
       </ul>
       <p>${0} items</p>
