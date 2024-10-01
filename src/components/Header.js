@@ -10,6 +10,7 @@ export class Header extends Component {
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <img src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png" class="iconPhoto">
         </menu>
       </nav>
     `

@@ -12,6 +12,15 @@ header{
   font-weight: bold;
   background-color: white;
   padding:3px 50px;
+  border-bottom: 1px solid #989797;
+}
+
+.iconPhoto{
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  background-color: rgb(213, 212, 212);
+  border:1px solid black;
 }
 
 .content_wrapper{
@@ -46,7 +55,7 @@ menu li{
   margin: 10px 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   header{
     display: none;
   }
@@ -75,7 +84,7 @@ menu li{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
-  margin: 2px;
+  margin: 5px;
 }
 
 .product_card img{
